@@ -1,0 +1,46 @@
+/* Style the jumbotron and arrange its children with flexbox */
+.jumbotron {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+.jumbotron .wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 630px;
+	padding: 50px 10px;
+}
+/* Style the header */
+.jumbotron h1{
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 48px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+/* Style the paragraph tag */
+.jumbotron p {
+	margin-top: 0.5;
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+/* I'd normally put buttons in their own component but i decided to just leave it here */
+.jumbotron button{
+	color: white;
+	background-color: var(--primary);
+	padding: 10px;
+	border-radius: 5px;
+	border:none;
+}
+.jumbotron button:hover{
+	background-color: #0069D9;
+}
+.jumbotron button.gray{
+	background-color: var(--secondary);
+}
+.jumbotron button.gray:hover{
+	background-color: #5A6268;
+}

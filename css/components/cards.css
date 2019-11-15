@@ -1,0 +1,65 @@
+/* I decided to use grid for the cards to meet the requirements of the assignment even though flexbox would be easier here! */
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	background-color: var(--light-gray);
+	grid-gap: 20px;
+	padding: 50px 5%;
+}
+.cards article{
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0,0,0,.125);
+}
+/* Style the faux image */
+.cards article .img-area{
+	height: 220px;
+	background-color: #55595C;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.5rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+/* Add padding to the text */
+.cards article .content{
+	padding: 10px 5%;
+}
+.cards article .ribbon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--secondary);
+}
+/* Style the buttons */
+.ribbon > div{
+	display: flex;
+}
+.cards button{
+	margin: 0;
+	padding: 7px;
+	border: none;
+	color: var(--secondary);
+	background-color: white;
+	border: 1px solid var(--secondary);
+	cursor: pointer;
+}
+.cards button:nth-of-type(1){
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.cards button:nth-of-type(2){
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left: 0px;
+}
+/* Give it a hover effect */
+.cards button:hover{
+	background-color: var(--secondary);
+	color: white;
+}
